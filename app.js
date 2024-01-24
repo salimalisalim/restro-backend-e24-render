@@ -12,7 +12,7 @@ app.use(express.static("uploads"));
 app.use(cookieParser());
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
-app.use(__dirname + "/uploads", express.static(__dirname + "uploads"));
+app.use(__dirname + "/uploads", express.static(__dirname + "/uploads"));
 
 // function routerLevelMid(req,res,next){
 //     console.log("Router Level");
